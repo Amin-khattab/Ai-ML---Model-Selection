@@ -31,9 +31,6 @@ print(confusion_matrix(y_test,y_pred))
 print("Cross-validation accuracies:", accuracies)
 print("Mean accuracy:", accuracies.mean())
 
-tuning_paramaters =  np.linspace(0.01,1.0,100)
-tuning_paramaters = [round(i,2) for i in tuning_paramaters]
-
 
 parameters = [{"C":[0.25,0.5,0.75,1],"kernel":["linear"]},
               {"C":[0.25,0.5,0.75,1],"kernel":["rbf"],"gamma":[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]},
